@@ -21,6 +21,15 @@ class _GamePageState extends State<GamePage>{
 
   _GamePageState(this.player_1, this.player_2);
 
+  // 初回画面表示時にアクションテキストを設定する
+  String action_text = getText();
+
+  void chageActionText() {
+    setState(() {
+      action_text = getText();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -81,7 +90,7 @@ class _GamePageState extends State<GamePage>{
                     ),
                     ElevatedButton(
                         onPressed: (){
-
+                          chageActionText();
                         },
                         child: Text('次のお題へ'),
                       style: ElevatedButton.styleFrom(
