@@ -30,10 +30,12 @@ class _GamePageState extends State<GamePage>{
         scaffoldBackgroundColor: Color(0xFFb70086),
       ),
       home: Scaffold(
+
         appBar: AppBar(
           title: Text('カップルゲーム'),
           backgroundColor: Color(0xFFb70086),
         ),
+
         body: Container(
           // 背景のグラデーションを設定
           decoration: BoxDecoration(

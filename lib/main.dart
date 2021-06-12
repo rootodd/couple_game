@@ -146,7 +146,10 @@ class _MyHomePageState extends State<MyHomePage>{
                   ),
               ),
               Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 20.0,
+                  vertical:   20.0,
+                ),
                 child: ElevatedButton(
                     onPressed: (){
                       Navigator.push(
